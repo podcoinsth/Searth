@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #202124;
+}
+
+.main-container {
+    text-align: center;
+    width: 100%;
+    max-width: 580px;
+}
+
+.google-logo {
+    width: 272px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    height: 44px;
+    margin: 0 auto;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.search-box:hover {
+    box-shadow: 0 1px 8px rgba(32, 33, 36, 0.28);
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+    background: none;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+    color: #9aa0a6;
+    cursor: pointer;
+}
+
+.search-icon svg {
+    height: 20px;
+    width: 20px;
+}
+
+.trending-searches {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.trending-searches h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #5f6368;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.trending-searches ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trending-searches li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.trending-searches li:hover {
+    background-color: #eee;
+}
+
+.trending-searches li::before {
+    content: "↗️"; /* ไอคอนลูกศร trend */
+    margin-right: 10px;
+    color: #5f6368;
+}
+
+.trending-searches a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}

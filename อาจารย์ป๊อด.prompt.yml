@@ -1,0 +1,17 @@
+modelParameters:
+  max_completion_tokens: 20431
+  temperature: 1
+  top_p: 0.72
+  stop: []
+  frequency_penalty: 1
+  presence_penalty: 2
+model: openai/gpt-4.1
+messages:
+  - role: system
+    content: 'No'
+testData: []
+evaluators:
+  - name: Groundedness
+    uses: github/groundedness
+  - name: Fluency
+    uses: github/fluency
